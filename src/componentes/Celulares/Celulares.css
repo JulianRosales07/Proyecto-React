@@ -1,0 +1,83 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+h1 {
+  text-align: center;
+  color: #ff6f00;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #333;
+  border-radius: 10px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #0066cc;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease-out;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #f0f0f0;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #0052a3;
+}
+
+nav button:focus {
+  outline: none;
+}
